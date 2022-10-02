@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
-import { RecoilRoot } from "recoil";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import App from "./App";
 import { darkTheme } from "./theme";
 import { createGlobalStyle } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,11 +75,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   // <React.StrictMode>
-    <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
         <App />
       </ThemeProvider>
-    </RecoilRoot>
   // {/* </React.StrictMode>, */}
 );
