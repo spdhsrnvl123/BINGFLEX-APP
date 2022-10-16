@@ -353,7 +353,7 @@ section {
 }
 
 .section-4 .container .box:nth-child(1) {
-  background-image: url("../imagesX/docterstrange.jpeg");
+  background-image: url("../images/docterstrange.jpeg");
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -383,7 +383,7 @@ section {
   cursor: pointer;
 }
 .section-4 .container .box:nth-child(2) {
-  background-image: url("../imagesX/ironman.jpeg");
+  background-image: url("../images/ironman.jpeg");
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
