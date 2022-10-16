@@ -64,7 +64,7 @@ section {
 }
 .section-0 {
   color: white;
-  background-image: url("../imagesX/Avengers.jpg");
+  background-image: url("../images/Avengers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -2.1vw;
@@ -120,7 +120,7 @@ section {
 /* ----------------------------- */
 .section-1 {
   color: white;
-  background-image: url("../imagesX/InterStellar.jpeg");
+  background-image: url("../images/InterStellar.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -2.1vw;
@@ -147,7 +147,7 @@ section {
 /* ----------------------------- */
 .section-2 {
   color: white;
-  background-image: url("../imagesX/Thor.jpeg");
+  background-image: url("../images/Thor.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -2.1vw;
