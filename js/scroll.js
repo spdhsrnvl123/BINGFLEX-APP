@@ -37,7 +37,7 @@
                 messageC_opacity_in: [0, 1, { start: 0.52, end: 0.68 }],
                 messageC_opacity_out: [1, 0, { start: 0.71, end: 0.78 }],
                 messageC_translateY_in: [30, 0, { start: 0.52, end: 0.67 }],
-                messageC_translateY_out: [0, -450, { start: 0.71, end: 0.78 }],
+                messageC_translateY_out: [0, -45, { start: 0.71, end: 0.78 }],
 
             }
         },
@@ -52,23 +52,24 @@
 
     const set_Height = () => {
         for (let i = 0; i < scene.length; i++) {
-            if (scene[i].type === "scrollEvent") {
+            if (scene[i].type === "scrollEvent") { //이벤트를 적용시키고자 하는 섹션 높이 셋팅.
                 scene[i].scrollHeight = scene[i].height_add * window.innerHeight;
-            } else if (scene[i].type === "normal") {
+            } else if (scene[i].type === "normal") { //이벤트 미적용 섹션 높이 기본값.
                 scene[i].scrollHeight = scene[i].objs.container.offsetHeight;
             }
-            scene[i].objs.container.style.height = `${scene[i].scrollHeight}px`
+            scene[i].objs.container.style.height = `${scene[i].scrollHeight}px` //높이 셋팅
         }
+
         //새로고침 했을때 잘못된 값 삽입 방지.
         totalHeight = 0;
         for (let i = 0; i < scene.length; i++) {
             totalHeight += scene[i].scrollHeight;
-            if (totalHeight >= pageYOffset) {
+            if (totalHeight >= scrollY) {
                 currentScene = i;
                 break;
             }
         }
-        document.body.setAttribute('id', `show-scene-${currentScene}`);
+        document.body.setAttribute('id', `show-scene-${currentScene}`); 
 
         //새로고침 방지
         playAnimation()
@@ -88,18 +89,18 @@
         } else if (currentYOffset > end_point) {
             result = value[1]
         }
-
         return result;
     }
+
     const playAnimation = () => {
         let currentYOffset = 0;
-        let value = scene[currentScene].value;
-        currentYOffset = yOffset - prevScrollHeight;
-        scrollRatio = currentYOffset / scene[currentScene].scrollHeight;
+        let value = scene[currentScene].value; //두번째 value 객체에 접근
+        currentYOffset = yOffset - prevScrollHeight; //두번째 씬의 스크롤 값
+        scrollRatio = currentYOffset / scene[currentScene].scrollHeight; //두번째 씬에서 스크롤 값의 비율 0 ~ 1
 
         switch (currentScene) {
             case 0:
-                break;
+                break; //첫번째 씬에서는 이벤트 발생 X
             case 1:
                 if (scrollRatio <= 0.17) {
                     scene[currentScene].objs.messageA.style.opacity = calculate(value.messageA_opacity_in, currentYOffset);
@@ -123,8 +124,8 @@
                     scene[currentScene].objs.messageC.style.transform = `translateY(${calculate(value.messageC_translateY_out, currentYOffset)}px)`
                 }
                 break;
-            case 2:
-                break;
+            case 2: 
+                break; //첫번째 씬에서는 이벤트 발생 X 
         }
     }
 
@@ -152,7 +153,7 @@
     }
 
     window.addEventListener("scroll", () => {
-        yOffset = pageYOffset;
+        yOffset = scrollY;
         update();
     })
 

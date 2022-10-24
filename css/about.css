@@ -75,24 +75,19 @@ header {
 
 /* ---------------------------------------- */
 section {
-  height: 53.4vw;
-  /* border-top: 10px dotted; */
+  height: 100vh;
 }
 .section-0,
-.section-1,
-.section-2,
-.section-6,
-.section-7,
-.section-8 {
+.section-1{
   background-color: black;
 }
 .section-0 .text-0 {
   position: relative;
   top: 38%;
-  left: 53%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-family: WildernessTypeface-Regular;
-  font-size: 15.8vw;
+  font-size: 300px;
   letter-spacing: -1.3vw;
   width: 40%;
   color: white;
@@ -139,21 +134,21 @@ section {
 
 .section-0 .text-0 .under {
   position: absolute;
-  top: 33%;
+  top: 50%;
   left: 45%;
+  width: 100%;
 }
 
 /* --------------------------------------- */
 .section-1 {
   position: relative;
   color: white;
+  height: 120vh;
 }
 .section-1 .left_leaf {
   position: absolute;
   top: 5%;
-  left: -6.5%;
-  width: 30.9vw;
-  height: 32.6vw;
+  left: -15.5%;
   transform: rotate(170deg);
   animation: rotate 1.5s ease-in-out alternate infinite;
 }
@@ -161,39 +156,23 @@ section {
   position: absolute;
   right: -14%;
   bottom: 7%;
-  width: 30.9vw;
-  height: 32.6vw;
+  background-color: rgba(0,0,0,0.5);
   transform: rotate(62deg);
   animation: rotate-2 1.5s ease-in-out alternate infinite;
 }
-@keyframes rotate {
-  to {
-    transform: rotate(170deg);
-  }
-  from {
-    transform: rotate(190deg);
-  }
-}
-@keyframes rotate-2 {
-  to {
-    transform: rotate(62deg);
-  }
-  from {
-    transform: rotate(82deg);
-  }
-}
+
 .section-1 .note {
   position: absolute;
-  top: 16%;
+  top: 28%;
   left: 20%;
-  width: 50.1vw;
-  height: 37.8vw;
+  width: 850px;
+  height: 460px;
   opacity: 0;
   transition: all 1s;
 }
 .section-1 .life_log {
   position: relative;
-  top: 17%;
+  top: 10%;
   left: 34%;
   font-family: inklipquid;
   font-size: 4.7vw;
@@ -231,14 +210,16 @@ section {
 /* --------------------------------------------------- */
 footer {
   position: relative;
-  height: 14vh;
+  height: 19vh;
   background-color: rgb(39, 34, 34);
   color: rgb(101, 101, 101);
 }
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 0.5vw;
+  padding-top: 30px;
+  font-size: 16px;
+  /* padding-top: 0.5vw; */
   line-height: 1.5;
 }
 .text_container .text_1,

@@ -64,21 +64,20 @@ section {
 }
 .section-0 {
   color: white;
-  background-image: url("../images/Avengers.jpg");
+  background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/Avengers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -2.1vw;
 }
 
 #represent_title {
-  position: absolute;
-  top: 36%;
-  left: 53%;
+  position: relative;
+  top: 38%;
+  left: 66%;
   transform: translate(-50%, -50%);
 }
 .main-title {
-  font-size: 20rem;
-  width: 1000px;
+  font-size: 310px;
+  width: 100%;
   font-family: WildernessTypeface-Regular;
   transition: transform 0.5s;
 }
@@ -105,41 +104,44 @@ section {
 .first-text {
   position: absolute;
   top: 95%;
-  left: 23%;
-  /* transform: translate(-50%, -50%); */
-  font-size: 1.5rem;
+  left: 5.5%;
+  letter-spacing: 3px;
+  font-size: 30px;
 }
 .second-text {
   position: absolute;
-  bottom: -30%;
-  left: 28%;
-  /* transform: translate(-50%, -50%); */
-  font-size: 1.2rem;
+  bottom: -40%;
+  left: 13%;
+  letter-spacing: 3px;
+  font-size: 24px;
   text-align: center;
 }
 /* ----------------------------- */
 .section-1 {
   color: white;
-  background-image: url("../images/InterStellar.jpeg");
+  background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/InterStellar.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -2.1vw;
 }
 
 .section-1-content {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 10%;
 }
 .section-1-text {
-  font-size: 5rem;
+  font-size: 80px;
+  /* letter-spacing: 2px; */
   font-family: inklipquid;
 }
 .section-1-text.active {
   animation: appear 1s ease-in-out alternate;
 }
 .section-1-text2 {
-  font-size: 1.2rem;
+  font-size: 24px;
+  padding-top:20px;
+  letter-spacing: 2px;
+  padding-left: 10px;
 }
 .section-1-text2.active {
   animation: appear 1.4s ease-in-out alternate;
@@ -147,7 +149,7 @@ section {
 /* ----------------------------- */
 .section-2 {
   color: white;
-  background-image: url("../images/Thor.jpeg");
+  background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/Thor.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -2.1vw;
@@ -157,18 +159,21 @@ section {
 }
 .section-2-content {
   position: absolute;
-  top: 30%;
+  top: 32%;
   left: 10%;
 }
 .section-2-text {
-  font-size: 5rem;
+  font-size: 80px;
   font-family: inklipquid;
 }
 .section-2-text.active {
   animation: appear 1s ease-in-out alternate;
 }
 .section-2-text2 {
-  font-size: 1.2rem;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  padding-left: 7px;
 }
 .section-2-text2.active {
   animation: appear 1.4s ease-in-out alternate;
@@ -230,14 +235,16 @@ section {
 /* --------------------------------------- */
 footer {
   position: relative;
-  height: 14vh;
+  height: 19vh;
   background-color: rgb(39, 34, 34);
   color: rgb(101, 101, 101);
 }
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 0.5vw;
+  padding-top: 30px;
+  font-size: 16px;
+  /* padding-top: 0.5vw; */
   line-height: 1.5;
 }
 .text_container .text_1,

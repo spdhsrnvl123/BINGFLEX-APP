@@ -25,7 +25,7 @@ const update = () => {
             }
         )
     }
-    setTimeout(move, 2000);
+    setTimeout(move, 1500);
 
     const navigationhandler = (e) => {
         for (let i = 0; i < pointWrap_li.length; i++){
