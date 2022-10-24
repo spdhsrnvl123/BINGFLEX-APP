@@ -49,11 +49,11 @@ header {
 /* ------------------------------------------------------ */
 #container-0 {
   position: relative;
-  height: 53vw;
+  height: 100vh;
 }
 section {
   width: 100%;
-  height: 53vw;
+  height: 100%;
   align-items: center;
   position: absolute;
   top: 0;
@@ -71,8 +71,10 @@ section {
 
 #represent_title {
   position: relative;
-  top: 38%;
-  left: 66%;
+  top: 42%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 .main-title {
@@ -87,11 +89,25 @@ section {
 }
 @keyframes magnify {
   0% {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   100% {
     transform: scale(1);
   }
+}
+
+
+
+.first-text {
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.second-text {
+  letter-spacing: 3px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .first-text.active {
@@ -100,28 +116,12 @@ section {
 .second-text.active {
   animation: appear 2s ease-in-out alternate;
 }
-
-.first-text {
-  position: absolute;
-  top: 95%;
-  left: 5.5%;
-  letter-spacing: 3px;
-  font-size: 30px;
-}
-.second-text {
-  position: absolute;
-  bottom: -40%;
-  left: 13%;
-  letter-spacing: 3px;
-  font-size: 24px;
-  text-align: center;
-}
 /* ----------------------------- */
 .section-1 {
   color: white;
   background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/InterStellar.jpeg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .section-1-content {
@@ -151,8 +151,7 @@ section {
   color: white;
   background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/Thor.jpeg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: -2.1vw;
+  background-size: cover;
 }
 .section-2-container {
   width: 100%;
@@ -226,11 +225,11 @@ section {
   width: 10.5em;
 }
 .box_container .box .box_img {
-  width: 25vw;
+  width: 400px;
   transition: all 0.7s ease-in-out;
 }
 .box_container .box .box_img:hover {
-  transform: scale(1.5);
+  transform: scale(1.6);
 }
 /* --------------------------------------- */
 footer {
@@ -242,20 +241,23 @@ footer {
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 16px;
-  /* padding-top: 0.5vw; */
   line-height: 1.5;
 }
 .text_container .text_1,
 .text_2 {
   display: flex;
+  padding-top: 3px;
 }
 .text_container .text_1 p {
   padding-right: 1.6vw;
+  padding-bottom: 2px;
 }
 .text_container .text_2 p {
   padding-right: 4.9vw;
+  padding-bottom: 7px;
+
 }
 .sns {
   position: absolute;
