@@ -11,7 +11,7 @@ const update = () => {
         {
             intro: document.querySelector(".section-1-under .intro"),
             first_text_1: document.querySelector(".section-1-under .first-text-1"),
-            img: document.querySelector(".section-1-under .icon"),
+            number_1 : document.querySelector(".section-1-under .number-1"),
             second_text_1 : document.querySelector(".section-1-under .second-text-1")
         },
         {
@@ -54,8 +54,12 @@ const update = () => {
             case 1:
                 element[pageNum].intro.style.opacity = 1;
                 element[pageNum].intro.style.transform = 'none';
+                element[pageNum].number_1.style.opacity = 1;
+                element[pageNum].number_1.style.transform = 'none';
                 element[pageNum].first_text_1.style.opacity = 1;
                 element[pageNum].first_text_1.style.transform = 'none';
+                element[pageNum].second_text_1.style.opacity = 1;
+                element[pageNum].second_text_1.style.transform = 'none';
                 element[pageNum].img.style.opacity = 1;
                 element[pageNum].img.style.transform = 'none';
                 element[pageNum].second_text_1.style.opacity = 1;

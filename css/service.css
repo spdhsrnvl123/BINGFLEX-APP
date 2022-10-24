@@ -50,7 +50,7 @@ header {
 }
 /* ---------------------------------------- */
 section {
-  height: 53vw;
+  height: 100vh;
   /* border-top: 5px dotted; */
 }
 /* --------------------------------------------------- */
@@ -70,8 +70,9 @@ section {
 }
 
 .section-0 .service {
-  font-size: 26vw;
+  font-size: 28vw;
   color:white;
+  padding-bottom: 150px;
   font-family: WildernessTypeface-Regular;
   animation: appear 0.7s ease-in-out alternate forwards;
   opacity: 0;
@@ -104,8 +105,8 @@ section {
   position: absolute;
   top: 10%;
   left: 15%;
-  width: 26vw;
-  height: 47vw;
+  width: 22vw;
+  height: 43vw;
   transform: translateX(-100px);
   opacity: 0;
   transition: all 1s;
@@ -149,32 +150,35 @@ section {
 .section-1-under .box-1 {
   position: absolute;
   height: 50%;
-  top: 28%;
-  right: 30%;
+  top: 23%;
+  left: 55%;
+  width: 100%;
+}
+.section-1-under .box-1 .number-1 {
+  font-family: WildernessTypeface-Regular;
+  font-size: 8vw;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s;
 }
 .section-1-under .box-1 .first-text-1 {
-  font-size: 4vw;
-  font-family: inklipquid;
   transition: all 1s;
-  transform: translateY(30px);
-  opacity: 0;
-}
-.section-1-under .box-1 img {
-  width: 15vw;
-  height: 15vw;
   position: absolute;
-  top: 40%;
-  left: -20%;
-  transition: all 1s 0.4s;
+  top:29%;
+  width: 100%;
+  font-size: 34px;
+  font-weight: bold;
   transform: translateY(30px);
   opacity: 0;
+  transition: all 1s 0.4s;
 }
+
 .section-1-under .box-1 .second-text-1 {
   position: absolute;
-  bottom: 62%;
-  left: 5%;
+  top: 47%;
   transition: all 1s 0.8s;
   opacity: 0;
+  transition: all 1s 0.8s;
   width: 100vw;
   font-weight: bold;
 }
@@ -227,8 +231,8 @@ section {
   position: absolute;
   top: 10%;
   right: 20%;
-  width: 22vw;
-  height: 41vw;
+  width: 23vw;
+  height: 42vw;
   transform: translateX(60px);
   opacity: 0;
   transition: all 1s;
@@ -271,7 +275,8 @@ section {
   position: absolute;
   bottom: 10%;
   left: 16.5%;
-  width: 24vw;
+  width: 23vw;
+  height: 43vw;
   opacity: 0;
   transition: all 1s;
 }
@@ -358,25 +363,30 @@ section {
 /* --------------------------------------------------- */
 footer {
   position: relative;
-  height: 14vh;
+  height: 19vh;
   background-color: rgb(39, 34, 34);
   color: rgb(101, 101, 101);
 }
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 0.5vw;
+  padding-top: 20px;
+  font-size: 16px;
   line-height: 1.5;
 }
 .text_container .text_1,
 .text_2 {
   display: flex;
+  padding-top: 3px;
 }
 .text_container .text_1 p {
   padding-right: 1.6vw;
+  padding-bottom: 2px;
 }
 .text_container .text_2 p {
   padding-right: 4.9vw;
+  padding-bottom: 7px;
+
 }
 .sns {
   position: absolute;
