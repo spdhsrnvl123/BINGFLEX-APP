@@ -148,13 +148,13 @@ section {
 .section-1 .left_leaf {
   position: absolute;
   top: 5%;
-  left: -15.5%;
+  left: -16.5%;
   transform: rotate(170deg);
   animation: rotate 1.5s ease-in-out alternate infinite;
 }
 .section-1 .right_leaf {
   position: absolute;
-  right: -14%;
+  right: -15%;
   bottom: 7%;
   background-color: rgba(0,0,0,0.5);
   transform: rotate(62deg);
@@ -217,20 +217,23 @@ footer {
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 16px;
-  /* padding-top: 0.5vw; */
   line-height: 1.5;
 }
 .text_container .text_1,
 .text_2 {
   display: flex;
+  padding-top: 3px;
 }
 .text_container .text_1 p {
   padding-right: 1.6vw;
+  padding-bottom: 2px;
 }
 .text_container .text_2 p {
   padding-right: 4.9vw;
+  padding-bottom: 7px;
+
 }
 .sns {
   position: absolute;
