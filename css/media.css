@@ -233,11 +233,11 @@ section {
   text-align: center;
   padding-top: 20px;
   font-weight: 360;
-  font-size: 1vw;
+  font-size: 1.2em;
 }
 
 .section-2 .container .box .box_inner p {
-  font-size: 0.7vw;
+  font-size: 0.8em;
   padding-top: 16px;
   text-align: center;
 }
