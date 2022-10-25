@@ -110,14 +110,16 @@ section {
 }
 
 .section-1 .penPhrases .first_text {
-  font-family: inklipquid;
-  font-size: 4.3rem;
+  /* font-family: inklipquid; */
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 0.1em;
   padding-bottom: 0.4em;
 }
 .section-1 .penPhrases .second_text {
   width: 23.8vw;
   margin-bottom: 2.5em;
-  padding: 0.8em;
+  font-size: 18px;
 }
 .section-1 > img {
   position: absolute;
@@ -125,7 +127,13 @@ section {
   top: 23%;
   left: 45%;
   width: 45vw;
+  border-radius: 50px;
+  box-shadow: 0px 0px 19px skyblue;
   /* height: 30vw; */
+  transition: all 0.5s;
+}
+.section-1 img:hover{
+  transform: scale(1.15);
 }
 /* ---------------------------------------------------------------------------------- */
 .section-2 {
@@ -147,15 +155,20 @@ section {
 .section-2 .button-box {
   position: absolute;
   bottom: 19%;
-  left: 19.2%;
+  left: 18.2%;
 }
 .section-2 .button-box button {
-  font-size: 2.3vw;
-  color: white;
-  border: 2px solid;
-  width: 2.8vw;
-  height: 3.1vw;
-  font-weight: 100;
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: red;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px 2px red;
+  transition: all 0.6s;
 }
 .section-2 .button-box button:nth-child(2) {
   position: absolute;
@@ -166,8 +179,10 @@ section {
   position: relative;
   top: 25%;
   left: 37.9%;
-  width: 88.4vw;
-  height: 31.6vw;
+  width: 1200px;
+  height: 600px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .section-2 .container .content {
   position: absolute;
@@ -178,11 +193,16 @@ section {
 }
 .section-2 .container .box {
   position: relative;
-  width: 22.1vw;
-  height: 31.6vw;
+  width: 300px;
+  height: 450px;
   transition: all 0.5s;
-  /* margin-right: 0.4vw; */
+  padding-top: 13px;
+  margin-right: 50px;
+  padding-left: 13px;
   /* background-color: red; */
+}
+.section-2 .container .box:hover {
+  transform: scale(1.1);
 }
 .section-2 .container.active .box:nth-child(3),
 .section-2 .container.active .box:nth-child(4) {
@@ -194,6 +214,8 @@ section {
 .section-2 .container .box img {
   width: inherit;
   height: inherit;
+  box-shadow: 0px 0px 19px skyblue;
+  border-radius: 50px;
 }
 
 .section-2 .container .box .box_inner h4 {
@@ -224,11 +246,11 @@ section {
 }
 
 .section-2 .prev:hover {
-  background-color: white;
+  background-color: black;
 }
 
 .section-2 .next:hover {
-  background-color: white;
+  background-color: black;
 }
 /* ----------------------------------------------------------------------------------- */
 .section-3 {
@@ -243,9 +265,10 @@ section {
 }
 .section-3 .text-box {
   position: absolute;
-  top: 28%;
-  left: 19.4%;
+  top: 30%;
+  left: 17.4%;
 }
+
 .section-3 .text-box-2 div {
   position: absolute;
   top: 100%;
@@ -257,24 +280,31 @@ section {
 .section-3 .button-box {
   position: absolute;
   bottom: 20%;
-  left: 19.6%;
+  left: 16.9%;
 }
 
 .section-3 .button-box button {
-  font-size: 2.3vw;
-  color: white;
-  border: 2px solid;
-  width: 2.8vw;
-  height: 3.1vw;
-  font-weight: 100;
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: red;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px 2px red;
+  transition: all 0.6s;
 }
 
 .section-3 .prev:hover {
-  background-color: white;
+  background-color: black;
+  font-size: 40px;
 }
 
 .section-3 .next:hover {
-  background-color: white;
+  background-color: black;
+  font-size: 40px;
 }
 
 .section-3 .button-box button:nth-child(2) {
@@ -288,7 +318,7 @@ section {
   top: 29%;
   left: 40%;
   width: 99.4vw;
-  height: 27.7vw;
+  height: 420px;
   /* overflow: hidden; */
   /* background-color: red; */
 }
@@ -298,17 +328,21 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 99.4vw;
+  width: 100%;
   transition: all 1s;
   /* transform: translateX(-49.7vw); */
 }
 .section-3 .container .box {
   position: relative;
   width: 49.7vw;
-  height: 27.7vw;
+  height: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 6.9vw;
   transition: all 0.3s;
+  padding-left: 10px;
 }
+
 .section-3 .container.active .box:nth-child(2) {
   opacity: 1;
 }
@@ -318,15 +352,9 @@ section {
 .section-3 .container .box img:nth-child(1) {
   width: inherit;
   height: inherit;
-}
-.section-3 .container .box img:nth-child(2) {
-  position: absolute;
-  z-index: 10;
-  width: 7.4vw;
-  height: 7.4vw;
-  top: 44.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  box-shadow: 0px 0px 19px rgb(17, 85, 175);
+  transition: all 0.5s;
 }
 /* ---------------------------------------------------------------------------------- */
 .section-4 {
@@ -334,10 +362,10 @@ section {
 }
 .section-4 h1{
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 10%;
+  left: 49%;
   transform: translate(-50%,-50%);
-  font-size: 60px;
+  font-size: 80px;
 }
 .section-4 .container {
   display: flex;
@@ -349,7 +377,9 @@ section {
 .section-4 .container .box {
   width: 34.2vw;
   height: 25.3vw;
-  margin-right: 1.1vw;
+  margin-right: 50px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px 2px red;
 }
 
 .section-4 .container .box:nth-child(1) {
@@ -363,7 +393,7 @@ section {
   top: 28.5%;
   left: 67.5%;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
+  font-size: 50px;
   width: inherit;
 }
 /* .section-4 .container .box p {
@@ -391,25 +421,30 @@ section {
 /* ---------------------------------------------------------------------------------- */
 footer {
   position: relative;
-  height: 14vh;
+  height: 19vh;
   background-color: rgb(39, 34, 34);
   color: rgb(101, 101, 101);
 }
 .text_container {
   max-width: 80%;
   margin: 0 auto;
-  padding-top: 0.5vw;
+  padding-top: 20px;
+  font-size: 16px;
   line-height: 1.5;
 }
 .text_container .text_1,
 .text_2 {
   display: flex;
+  padding-top: 3px;
 }
 .text_container .text_1 p {
   padding-right: 1.6vw;
+  padding-bottom: 2px;
 }
 .text_container .text_2 p {
   padding-right: 4.9vw;
+  padding-bottom: 7px;
+
 }
 .sns {
   position: absolute;
@@ -419,3 +454,4 @@ footer {
 .sns a {
   padding-right: 0.4vw;
 }
+

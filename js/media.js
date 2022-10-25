@@ -33,14 +33,14 @@ const update_0 = () => {
 
 
     next_0.addEventListener("click", () => {
-        content_0.style.transform = `translateX(${-44.2}vw)`
+        content_0.style.transform = `translateX(${-700}px)`
         container_0.style.overflow = `hidden`;
         container_0.classList.remove("box_opacity");
         container_0.classList.add("active");
     })
 
     prev_0.addEventListener("click", () => {
-        content_0.style.transform = `translateX(${0}vw)`
+        content_0.style.transform = `translateX(${0}px)`
         container_0.classList.remove("active");
         container_0.classList.add("box_opacity");
     })
