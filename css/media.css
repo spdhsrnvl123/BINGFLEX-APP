@@ -138,6 +138,7 @@ section {
 /* ---------------------------------------------------------------------------------- */
 .section-2 {
   position: relative;
+  height : 100vh;
 }
 /* .section-2 .section-box {
   background-color: black;
@@ -222,10 +223,14 @@ section {
   /* background-color: red; */
   bottom: 31%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;
-  height: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 129px;
+  
 }
 
 
@@ -233,12 +238,12 @@ section {
   text-align: center;
   padding-top: 20px;
   font-weight: 360;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 .section-2 .container .box .box_inner p {
-  font-size: 0.8em;
-  padding-top: 16px;
+  font-size: 12px;
+  padding-top: 10px;
   text-align: center;
 }
 
