@@ -64,7 +64,8 @@ section {
 }
 .section-0 {
   color: white;
-  background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/Avengers.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Avengers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -117,7 +118,8 @@ section {
 /* ----------------------------- */
 .section-1 {
   color: white;
-  background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/InterStellar.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../images/InterStellar.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -137,7 +139,7 @@ section {
 }
 .section-1-text2 {
   font-size: 24px;
-  padding-top:20px;
+  padding-top: 20px;
   letter-spacing: 2px;
   padding-left: 10px;
 }
@@ -147,7 +149,8 @@ section {
 /* ----------------------------- */
 .section-2 {
   color: white;
-  background-image : linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("../images/Thor.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../images/Thor.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -195,40 +198,53 @@ section {
 #container-2 {
   height: 100vh;
   background-color: black;
-}
-.subMenu{
-  color: white;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  font-size: 5vw;
-  transform: translate(-50%,-50%);
-}
-.box_container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
-.box_container .box {
+.box_container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.box_container a {
+  text-decoration: none;
+  letter-spacing: -2px;
+  margin: 0 80px;
+}
+.subMenu {
+  font-family: WildernessTypeface-Regular;
+  color: white;
+  font-size: 234px;
+}
+
+.cube {
   position: relative;
-  padding: 25px;
-  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(10deg);
 }
-.box_container .box .box_text {
+.cube div {
   position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10.5em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
 }
-.box_container .box .box_img {
-  width: 400px;
-  transition: all 0.7s ease-in-out;
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515, #b0eb51bb);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(300px);
 }
-.box_container .box .box_img:hover {
-  transform: scale(1.6);
-}
+
 /* --------------------------------------- */
 footer {
   position: relative;
@@ -255,7 +271,6 @@ footer {
 .text_container .text_2 p {
   padding-right: 4.9vw;
   padding-bottom: 7px;
-
 }
 .sns {
   position: absolute;
