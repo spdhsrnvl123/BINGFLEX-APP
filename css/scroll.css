@@ -40,10 +40,8 @@
 }
 .message .app3 {
   position: absolute;
-  /* top: -70%; */
   top: -120%;
   left: -15%;
-  /* right: 37%; */
   z-index: -1;
   width: 100%;
 }
@@ -66,10 +64,4 @@
   font-size: 1.7vw;
   font-weight: bold;
   cursor: pointer;
-}
-
-/* --------------------------------------------- */
-
-.modal {
-  color: white;
 }
