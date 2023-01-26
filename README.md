@@ -21,22 +21,24 @@
     <thead>
         <tr style="text-align:center">
             <td>메인 페이지</td>
-            <td>서비스 페이지</td>
+            <td>어바웃 페이지</td>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><img width="400px" src="./presentationGif/mainpage.gif" /></td>
-            <td><img width="400px" src="./presentationGif/servicepage.gif" /></td>
+            <td><img width="400px" src="./presentationGif/aboutpage.gif" /></td>
         </tr>
     </tbody>
         <thead >
         <tr style="text-align:center">
+            <td>서비스 페이지</td>
             <td>미디어 페이지</td>
         </tr>
     </thead>
     <tbody>
         <tr> 
+            <td><img width="400px" src="./presentationGif/servicepage.gif" /></td>
             <td><img width="400px" src="./presentationGif/mediapage.gif" /></td>
         </tr>
     </tbody>
